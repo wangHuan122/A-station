@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wang Huan - Frontend Engineer">
+  <title>Wang Huan | Frontend Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-mark">WH</span>
+        <span class="brand-copy">
+          <strong>Wang Huan</strong>
+          <span>Frontend Engineer</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="#" class="nav-link" data-page="work">Work</a>
+        <a href="#" class="nav-link" data-page="university">University</a>
+        <a href="#" class="nav-link" data-page="life">Life</a>
+        <a href="#" class="nav-link" data-page="contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- Hero - Home Page -->
+      <section class="section hero active" id="home-page">
+        <div class="hero-content" data-reveal>
+          <p class="hero-kicker">Hello, I'm</p>
+          <h1>Wang <span class="highlight">Huan</span></h1>
+          <p class="hero-role">
+            A <span class="hero-role-live" id="hero-role-live">Frontend Developer</span>
+          </p>
+          <p class="hero-text">
+            前端工程师，专注 Vue/React 技术栈，擅长企业级中后台系统开发与性能优化。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#" data-page="work">View Work</a>
+            <a class="button secondary" href="#" data-page="life">View Life</a>
+          </div>
+        </div>
+
+        <div class="hero-stage" data-reveal>
+          <div class="portrait-orbit">
+            <div class="portrait-ring"></div>
+            <div class="portrait-shell">
+              <img class="hero-portrait" src="assets/images/c34a9de8e4dd562c0134477c51e0a7dc.jpg" alt="Wang Huan" loading="eager">
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Work Page -->
+      <section class="page-section" id="work-page">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Work Experience</p>
+          <h2>Career & Projects</h2>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills-block" data-reveal>
+          <h3 class="sub-heading">Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Vue 3 / Vite / TypeScript</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">React / Hooks / Redux</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">HTML / CSS / JavaScript</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Element Plus / Ant Design</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span>Vue3</span><span>Vue Router</span><span>Pinia</span><span>Vite</span>
+            <span>TypeScript</span><span>React</span><span>Ant Design</span>
+            <span>Element Plus</span><span>Echarts</span><span>Axios</span><span>Micro-app</span>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="experience-block" data-reveal>
+          <h3 class="sub-heading">Experience</h3>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4>东方丝路（深圳）科技有限公司</h4>
+                  <span class="timeline-date">2024.04 - 至今</span>
+                </div>
+                <p class="timeline-role">Web 前端开发</p>
+                <ul class="timeline-list">
+                  <li>负责开发和维护 20+ 后台管理系统（CSCN、OAS、SPFN 等）</li>
+                  <li>使用 Micro-app 微前端架构，将大型系统拆分为多个小模块</li>
+                  <li>参与 Vue2 迁移至 Vue3，提升开发效率和项目可维护性</li>
+                </ul>
+                <div class="timeline-tech">
+                  <span>Vue3</span><span>Vite</span><span>TypeScript</span><span>Micro-app</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4>南京中天安驰科技有限公司</h4>
+                  <span class="timeline-date">2023.10 - 2024.03</span>
+                </div>
+                <p class="timeline-role">Web 前端开发（实习）</p>
+                <ul class="timeline-list">
+                  <li>根据接口文档完成前后端联调，实现项目国际化</li>
+                  <li>配合团队提升前端架构可维护性，参与技术难点攻坚</li>
+                </ul>
+                <div class="timeline-tech">
+                  <span>React</span><span>TypeScript</span><span>Ant Design</span><span>Echarts</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Work Gallery -->
+        <div class="gallery-block" data-reveal>
+          <div class="gallery-header">
+            <h3 class="sub-heading">Company · 公司风采</h3>
+            <button class="view-all-btn" data-gallery="work">查看全部 <span>8</span></button>
+          </div>
+          <div class="card-slider" data-gallery="work">
+            <div class="card-track">
+              <div class="card-slide"><img src="assets/images/work/a520dfe2817d036092d7a9c432b13737_720.jpg" alt="Company"></div>
+              <div class="card-slide"><img src="assets/images/work/4bb180f7be8b1f9108cfbf4c418673a1_0.jpg" alt="Company"></div>
+              <div class="card-slide"><img src="assets/images/work/7fcec2c12a59f3acf06a23bec183db77_0.jpg" alt="Company"></div>
+              <div class="card-slide"><img src="assets/images/work/d4210bb21e99b016173cabc0aa541c1a_0.jpg" alt="Company"></div>
+              <div class="card-slide"><img src="assets/images/work/06fe5957d5fd7dd27f3ecbe29e5b38f0_0.jpg" alt="Company"></div>
+              <div class="card-slide"><img src="assets/images/work/b2b6d0abda269a4e50b506ed379358fe_0.jpg" alt="Company"></div>
+              <div class="card-slide"><img src="assets/images/work/c2048f1cc2386a87f00c8b8f061d8910_0.png" alt="Company"></div>
+              <div class="card-slide"><img src="assets/images/work/c7520c74f0563e007648fde069f371d3_0.jpg" alt="Company"></div>
+            </div>
+            <div class="card-nav">
+              <button class="card-btn card-prev">&lsaquo;</button>
+              <div class="card-dots"></div>
+              <button class="card-btn card-next">&rsaquo;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="projects-block" data-reveal>
+          <h3 class="sub-heading">Projects</h3>
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="vue">Vue</button>
+            <button class="filter-btn" data-filter="react">React</button>
+          </div>
+          <div class="project-grid">
+            <article class="project-card" data-category="vue">
+              <div class="project-info">
+                <h4>销售预估系统</h4>
+                <p>包含销售渠道、销售人员、销售情况和审批流程的管理平台</p>
+                <div class="project-tags">
+                  <span>Vue3</span><span>ElementPlus</span><span>Echarts</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-category="react">
+              <div class="project-info">
+                <h4>用户管理系统</h4>
+                <p>管理摄像头用户和对应购买设备的管理系统</p>
+                <div class="project-tags">
+                  <span>React</span><span>Ant Design</span><span>React Router</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-category="vue">
+              <div class="project-info">
+                <h4>企业级后台系统集群</h4>
+                <p>20+ 后台管理系统，包含 CSCN、OAS、SPFN 等多个业务系统</p>
+                <div class="project-tags">
+                  <span>Vue3</span><span>Micro-app</span><span>权限控制</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-category="vue">
+              <div class="project-info">
+                <h4>价格管理系统（H5）</h4>
+                <p>毛利审核、产品成本价处理、价格特别审批和新品定价审批</p>
+                <div class="project-tags">
+                  <span>Vue3</span><span>Vant</span><span>Pinia</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="education-block" data-reveal>
+          <h3 class="sub-heading">Education</h3>
+          <div class="edu-card">
+            <h4>盐城师范学院</h4>
+            <p>物联网工程（嵌入式培养）· 本科 · 2020.09 - 2024.06</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- University Page -->
+      <section class="page-section" id="university-page">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">My University</p>
+          <h2>盐城师范学院</h2>
+          <p>Yancheng Teachers University</p>
+        </div>
+
+        <div class="university-content">
+          <div class="university-main" data-reveal>
+            <div class="university-banner">
+              <div class="university-info-card">
+                <h3>物联网工程（嵌入式培养）</h3>
+                <p class="university-meta">本科 · 信息工程学院 · 2020.09 - 2024.06</p>
+                <div class="university-highlights">
+                  <div class="highlight-item">
+                    <span class="highlight-icon">🏆</span>
+                    <div>
+                      <h4>多次参加计算机设计大赛</h4>
+                      <p>并参与过国家计算机设计大赛直通赛</p>
+                    </div>
+                  </div>
+                  <div class="highlight-item">
+                    <span class="highlight-icon">📚</span>
+                    <div>
+                      <h4>在校曾担任信息工程学院 207 班团支书</h4>
+                      <p>多次获得三等奖学金、国家助学金</p>
+                    </div>
+                  </div>
+                  <div class="highlight-item">
+                    <span class="highlight-icon">🎖️</span>
+                    <div>
+                      <h4>荣获优秀共青团员等证书</h4>
+                      <p>积极参与学校各项活动</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="university-gallery" data-reveal>
+              <h3>校园风光</h3>
+              <div class="university-gallery-grid">
+                <div class="university-gallery-item"><img src="assets/images/university/a309f1eb552eaaa898256d5aecfa893d_720.jpg" alt="Campus" loading="lazy"></div>
+                <div class="university-gallery-item"><img src="assets/images/university/3cca75decef1da06b601e6f006cacd4b.jpg" alt="Campus" loading="lazy"></div>
+              </div>
+            </div>
+
+            <div class="university-about" data-reveal>
+              <h3>关于学校</h3>
+              <p>
+                盐城师范学院是江苏省属高等师范本科院校，坐落在江苏沿海开放城市盐城市区。
+                学校创建于1958年，前身是盐城师范专科学校和盐城教育学院，2002年两校合并组建盐城师范学院。
+              </p>
+              <p>
+                学校现有通榆和新长两个校区，校园占地面积1500亩，校舍建筑面积58万平方米。
+                设有18个二级学院，开设73个本科专业，涵盖文学、理学、工学、教育学、经济学、管理学、艺术学、农学等8个学科门类。
+              </p>
+            </div>
+          </div>
+
+          <aside class="university-sidebar" data-reveal>
+            <div class="sidebar-card">
+              <h4>专业信息</h4>
+              <ul class="sidebar-list">
+                <li><span>专业：</span>物联网工程（嵌入式培养）</li>
+                <li><span>学院：</span>信息工程学院</li>
+                <li><span>学历：</span>本科</li>
+                <li><span>学制：</span>4年</li>
+                <li><span>入学：</span>2020年9月</li>
+                <li><span>毕业：</span>2024年6月</li>
+              </ul>
+            </div>
+
+            <div class="sidebar-card">
+              <h4>在校荣誉</h4>
+              <div class="honor-tags">
+                <span>三等奖学金</span>
+                <span>国家助学金</span>
+                <span>优秀共青团员</span>
+                <span>计算机设计大赛</span>
+                <span>国家大赛直通赛</span>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h4>学校位置</h4>
+              <p class="location-text">江苏省盐城市亭湖区希望大道</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Life Page -->
+      <section class="page-section" id="life-page">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Life</p>
+          <h2>Personal Interests</h2>
+          <p>工作之余，享受运动和城市探索。</p>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="life-block" data-reveal>
+          <h3 class="sub-heading">Hobbies</h3>
+          <div class="hobby-tags">
+            <span>台球</span><span>羽毛球</span><span>象棋</span><span>乒乓球</span>
+            <span>篮球</span><span>吃鸡</span><span>王者</span>
+          </div>
+        </div>
+
+        <!-- City Gallery -->
+        <div class="gallery-block" data-reveal>
+          <div class="gallery-header">
+            <h3 class="sub-heading">City · 城市探索</h3>
+            <button class="view-all-btn" data-gallery="city">查看全部 <span>9</span></button>
+          </div>
+          <div class="card-slider" data-gallery="city">
+            <div class="card-track">
+              <div class="card-slide"><img src="assets/images/city/24f5135456dec67ab353e0f38f961757_720.jpg" alt="City"></div>
+              <div class="card-slide"><img src="assets/images/city/4b7d764173604b46222d5db2acb83d87_0.jpg" alt="City"></div>
+              <div class="card-slide"><img src="assets/images/city/5f2094a888a444430326cb24c99d2a33_0.jpg" alt="City"></div>
+              <div class="card-slide"><img src="assets/images/city/657ae1ef3e9740fa164434d5bb7e9a01_0.jpg" alt="City"></div>
+              <div class="card-slide"><img src="assets/images/city/86bd5dac1dd6715c394c3d01f5f99675_720.jpg" alt="City"></div>
+              <div class="card-slide"><img src="assets/images/city/cd304fc9c7d0571514698f8242d3d210_0.jpg" alt="City"></div>
+              <div class="card-slide"><img src="assets/images/city/e16249635fbf27052098d73a92109b6d_720.jpg" alt="City"></div>
+              <div class="card-slide"><img src="assets/images/city/e5670ef46097a6228b528dd259d8979e_720.jpg" alt="City"></div>
+              <div class="card-slide"><img src="assets/images/city/e8c2f089bf32d7c7696ecdd44b6d2da2_720.jpg" alt="City"></div>
+            </div>
+            <div class="card-nav">
+              <button class="card-btn card-prev">&lsaquo;</button>
+              <div class="card-dots"></div>
+              <button class="card-btn card-next">&rsaquo;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Life Gallery -->
+        <div class="gallery-block" data-reveal>
+          <div class="gallery-header">
+            <h3 class="sub-heading">Moments · 生活随拍</h3>
+            <button class="view-all-btn" data-gallery="life">查看全部 <span>6</span></button>
+          </div>
+          <div class="card-slider" data-gallery="life">
+            <div class="card-track">
+              <div class="card-slide"><img src="assets/images/life/1683dcbc15c7a991040d376237c0c014_0.jpg" alt="Life"></div>
+              <div class="card-slide"><img src="assets/images/life/513ca26d82a5dcfb3af1be6aa81d1717_0.jpg" alt="Life"></div>
+              <div class="card-slide"><img src="assets/images/life/07ee4e1118658dbe6901b7713f512218_0.jpg" alt="Life"></div>
+              <div class="card-slide"><img src="assets/images/life/5ed767c30bc6ccb46719fc15999e2f76_0.jpg" alt="Life"></div>
+              <div class="card-slide"><img src="assets/images/life/4a509e5a413c320a2153a1f8a92b5d0d_0.jpg" alt="Life"></div>
+              <div class="card-slide"><img src="assets/images/life/e75883df6cad945ee458c338c356b883_0.jpg" alt="Life"></div>
+            </div>
+            <div class="card-nav">
+              <button class="card-btn card-prev">&lsaquo;</button>
+              <div class="card-dots"></div>
+              <button class="card-btn card-next">&rsaquo;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox Modal - Grid View -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-header">
+          <h3 class="lightbox-title"></h3>
+          <button class="lightbox-close">&times;</button>
+        </div>
+        <div class="lightbox-grid"></div>
+      </div>
+
+      <!-- Image Viewer - Single Image -->
+      <div class="image-viewer" id="image-viewer">
+        <button class="viewer-close">&times;</button>
+        <button class="viewer-prev">&lsaquo;</button>
+        <img class="viewer-image" src="" alt="">
+        <button class="viewer-next">&rsaquo;</button>
+        <div class="viewer-counter"></div>
+      </div>
+
+      <!-- Contact Page -->
+      <section class="page-section" id="contact-page">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-grid" data-reveal>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p class="contact-value">18893942878</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">2905174093@qq.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💬</span>
+            <div>
+              <p class="contact-label">WeChat</p>
+              <p class="contact-value">wbq2905174093</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Shenzhen</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Wang Huan. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
