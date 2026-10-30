@@ -191,10 +191,29 @@
           <h3 class="sub-heading">Projects</h3>
           <div class="project-filters">
             <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai">AI</button>
             <button class="filter-btn" data-filter="vue">Vue</button>
             <button class="filter-btn" data-filter="react">React</button>
           </div>
           <div class="project-grid">
+            <article class="project-card" data-category="ai">
+              <div class="project-info">
+                <h4>AI 智能助手（chatRoom）</h4>
+                <p>支持流式对话、工具调用、知识库检索和会话记忆的 AI Agent</p>
+                <div class="project-tags">
+                  <span>Node.js</span><span>LangGraph</span><span>RAG</span><span>MCP</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-category="vue">
+              <div class="project-info">
+                <h4>销售数据运营后台（sales-data-ops-admin）</h4>
+                <p>全栈练习项目，涵盖销售概览、订单与客户管理、数据报表和操作审计</p>
+                <div class="project-tags">
+                  <span>Vue3</span><span>TypeScript</span><span>Express</span><span>MySQL</span>
+                </div>
+              </div>
+            </article>
             <article class="project-card" data-category="vue">
               <div class="project-info">
                 <h4>销售预估系统</h4>
@@ -224,14 +243,24 @@
             </article>
             <article class="project-card" data-category="vue">
               <div class="project-info">
-                <h4>价格管理系统（H5）</h4>
-                <p>毛利审核、产品成本价处理、价格特别审批和新品定价审批</p>
+                <h4>价格管理系统（galaplat-busi-platformmobile）</h4>
+                <p>移动端审批平台，涵盖毛利率、价格特例和新品定价审批</p>
                 <div class="project-tags">
                   <span>Vue3</span><span>Vant</span><span>Pinia</span>
                 </div>
               </div>
             </article>
           </div>
+        </div>
+
+      </section>
+
+      <!-- University Page -->
+      <section class="page-section" id="university-page">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">My University</p>
+          <h2>盐城师范学院</h2>
+          <p>Yancheng Teachers University</p>
         </div>
 
         <!-- Education -->
@@ -241,15 +270,6 @@
             <h4>盐城师范学院</h4>
             <p>物联网工程（嵌入式培养）· 本科 · 2020.09 - 2024.06</p>
           </div>
-        </div>
-      </section>
-
-      <!-- University Page -->
-      <section class="page-section" id="university-page">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">My University</p>
-          <h2>盐城师范学院</h2>
-          <p>Yancheng Teachers University</p>
         </div>
 
         <div class="university-content">
@@ -424,38 +444,56 @@
 
       <!-- Contact Page -->
       <section class="page-section" id="contact-page">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Contact</p>
-          <h2>Get In Touch</h2>
-        </div>
-        <div class="contact-grid" data-reveal>
-          <div class="contact-item">
-            <span class="contact-icon">📱</span>
-            <div>
-              <p class="contact-label">Phone</p>
-              <p class="contact-value">18893942878</p>
+        <div class="contact-layout" data-reveal>
+          <div class="contact-intro">
+            <p class="eyebrow">Contact / 04</p>
+            <h2>Get In<br><span>Touch.</span></h2>
+            <p class="contact-intro-name">Wang Huan <span> / </span> Frontend Engineer</p>
+            <div class="contact-signal" aria-hidden="true">
+              <span class="contact-signal-line"></span>
+              <span class="contact-signal-marker">WH</span>
+              <span class="contact-signal-caption">SHENZHEN &nbsp; / &nbsp; 22.54° N</span>
             </div>
           </div>
-          <div class="contact-item">
-            <span class="contact-icon">✉️</span>
-            <div>
-              <p class="contact-label">Email</p>
-              <p class="contact-value">2905174093@qq.com</p>
+
+          <div class="contact-details">
+            <div class="contact-details-heading">
+              <span>CONTACT DETAILS</span>
+              <span>01 — 04</span>
             </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">💬</span>
-            <div>
-              <p class="contact-label">WeChat</p>
-              <p class="contact-value">wbq2905174093</p>
+            <a class="contact-item" href="tel:18893942878">
+              <span class="contact-number">01</span>
+              <span class="contact-info">
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">18893942878</span>
+              </span>
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="contact-item" href="mailto:2905174093@qq.com">
+              <span class="contact-number">02</span>
+              <span class="contact-info">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">2905174093@qq.com</span>
+              </span>
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="contact-item">
+              <span class="contact-number">03</span>
+              <span class="contact-info">
+                <span class="contact-label">WeChat</span>
+                <span class="contact-value">wbq2905174093</span>
+              </span>
+              <button class="contact-copy" type="button" data-copy="wbq2905174093" aria-label="复制微信号" title="复制微信号">⧉</button>
             </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">📍</span>
-            <div>
-              <p class="contact-label">Location</p>
-              <p class="contact-value">Shenzhen</p>
+            <div class="contact-item">
+              <span class="contact-number">04</span>
+              <span class="contact-info">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Shenzhen</span>
+              </span>
+              <span class="contact-location-mark" aria-hidden="true">●</span>
             </div>
+            <p class="contact-feedback" role="status" aria-live="polite"></p>
           </div>
         </div>
       </section>

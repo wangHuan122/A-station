@@ -105,23 +105,24 @@ filterBtns.forEach((btn) => {
     btn.classList.add("active");
 
     projectCards.forEach((card) => {
-      const category = card.dataset.category;
-      if (filter === "all" || category === filter) {
-        card.style.display = "block";
-        setTimeout(() => {
-          card.style.opacity = "1";
-          card.style.transform = "translateY(0)";
-        }, 50);
-      } else {
-        card.style.opacity = "0";
-        card.style.transform = "translateY(20px)";
-        setTimeout(() => {
-          card.style.display = "none";
-        }, 300);
-      }
+      card.hidden = filter !== "all" && card.dataset.category !== filter;
     });
   });
 });
+
+const contactCopy = document.querySelector(".contact-copy");
+const contactFeedback = document.querySelector(".contact-feedback");
+
+if (contactCopy && contactFeedback) {
+  contactCopy.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(contactCopy.dataset.copy);
+      contactFeedback.textContent = "微信号已复制";
+    } catch {
+      contactFeedback.textContent = "复制失败，请手动复制微信号";
+    }
+  });
+}
 
 // Mobile navigation
 const navToggle = document.querySelector(".nav-toggle");
