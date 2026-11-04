@@ -110,18 +110,19 @@ filterBtns.forEach((btn) => {
   });
 });
 
-const contactCopy = document.querySelector(".contact-copy");
+const contactCopies = document.querySelectorAll(".contact-copy");
 const contactFeedback = document.querySelector(".contact-feedback");
 
-if (contactCopy && contactFeedback) {
-  contactCopy.addEventListener("click", async () => {
+if (contactFeedback) {
+  contactCopies.forEach((button) => button.addEventListener("click", async () => {
+    const label = button.dataset.copyLabel;
     try {
-      await navigator.clipboard.writeText(contactCopy.dataset.copy);
-      contactFeedback.textContent = "微信号已复制";
+      await navigator.clipboard.writeText(button.dataset.copy);
+      contactFeedback.textContent = `${label}已复制`;
     } catch {
-      contactFeedback.textContent = "复制失败，请手动复制微信号";
+      contactFeedback.textContent = `复制失败，请手动复制${label}`;
     }
-  });
+  }));
 }
 
 // Mobile navigation
